@@ -16,13 +16,11 @@ const images = [
 
 const ulEl = document.querySelector('.gallery');
 
+const imgLi = images.map((image) => 
+  `<li><img src="${image.url}" alt="${image.alt}" width="400"></li>`
+).join("")
 
-images.forEach(el => {
-  ulEl.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src = "${el.url}" alt = "${el.alt}"  width = "150" height = "100" /></li>`,
-  );
-});
+ulEl.insertAdjacentHTML("beforeend", imgLi);
 
 
 

@@ -1,6 +1,5 @@
-let valueEl = Number(document.querySelector('#value').textContent);
-
 let counterValue = document.querySelector('#value');
+let valueEl = 0;
 
 const dekrBtn = document.querySelector('#counter').firstElementChild;
 const inkrBtn = document.querySelector('#counter').lastElementChild;
